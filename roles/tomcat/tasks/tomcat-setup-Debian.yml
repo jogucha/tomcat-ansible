@@ -82,3 +82,14 @@
     - "{{ tomcat_install_path }}/webapps/host-manager/META-INF/context.xml"
     - "{{ tomcat_install_path }}/webapps/manager/META-INF/context.xml"
   notify: restart tomcat
+
+- name: Download a WAR File to the Tomcat webapps directory to be deployed
+  community.general.maven_artifact:
+    group_id: org.uax.devops
+    artifact_id: demo-web-project
+    extension: war
+    repository_url: 'http://10.0.0.8:8081'
+    username: jenkins
+    password: 3085Joguch@Jen
+    version: 1.11
+    dest: "{{ tomcat_install_path }}/webapps/demo-web-project.war"
