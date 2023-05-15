@@ -21,7 +21,7 @@
   user:
     name: tomcat
     group: tomcat
-    home:"{{ tomcat_install_path }}"
+    home: "{{ tomcat_install_path }}"
     createhome: no
     system: yes
 
