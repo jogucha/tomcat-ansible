@@ -55,7 +55,7 @@
   template:
     src: tomcat-users.xml.j2
     dest: "{{ tomcat_install_path }}/conf/tomcat-users.xml"
-  notify: restart tomcat
+#  notify: restart tomcat
 
 - name: Allow access to Manager and Host Manager apps from any IP
   template:
