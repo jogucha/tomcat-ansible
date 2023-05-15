@@ -80,5 +80,5 @@
     dest: "{{ item }}"
   with_items:
     - "{{ tomcat_install_path }}/webapps/host-manager/META-INF/context.xml"
-    - "{{ tomcat_install_path }}/manager/META-INF/context.xml"
+    - "{{ tomcat_install_path }}/webapps/manager/META-INF/context.xml"
   notify: restart tomcat
