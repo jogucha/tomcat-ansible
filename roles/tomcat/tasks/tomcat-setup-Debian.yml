@@ -16,9 +16,9 @@
     state: present
     update_cache: yes
 
-- name: Install Default Java (Debian/Ubuntu)
+- name: Install Java 11 (Debian/Ubuntu)
   apt:
-    name: default-jdk
+    name: openjdk-11-jre-headless
     state: present
 
 - name: Add tomcat group
