@@ -12,7 +12,7 @@
     name: tomcat
     group: tomcat
     home: "{{ tomcat_install_path }}"
-    createhome: no
+    createhome: yes
     system: yes
 
 - name: Download Tomcat
