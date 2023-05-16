@@ -93,3 +93,5 @@
     password: 3085Joguch@Jen
     version: 1.11
     dest: "{{ tomcat_install_path }}/webapps/demo-web-project.war"
+    group: tomcat
+    owner: tomcat
