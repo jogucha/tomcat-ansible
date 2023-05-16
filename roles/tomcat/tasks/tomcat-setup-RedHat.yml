@@ -83,13 +83,13 @@
   
 - name: Download a WAR File to the Tomcat webapps directory to be deployed
   community.general.maven_artifact:
-    group_id: org.uax.devops
-    artifact_id: demo-web-project
+    group_id: "{{ group_id }}"
+    artifact_id: "{{ artifact_id }}"
     extension: war
     repository_url: 'http://10.0.0.8:8082/artifactory/libs-release-local'
     username: jenkins
     password: 3085Joguch@Jen
-    version: 1.11
-    dest: "{{ tomcat_install_path }}/webapps/demo-web-project.war"
+    version: "{{ version }}"
+    dest: "{{ tomcat_install_path }}/webapps/{{ artifact_id }}.war"
     group: tomcat
     owner: tomcat
