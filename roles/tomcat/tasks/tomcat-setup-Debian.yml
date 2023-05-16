@@ -88,7 +88,7 @@
     group_id: org.uax.devops
     artifact_id: demo-web-project
     extension: war
-    repository_url: 'http://10.0.0.8:8081/libs-release-local'
+    repository_url: 'http://10.0.0.8:8082/artifactory/libs-release-local'
     username: jenkins
     password: 3085Joguch@Jen
     version: 1.11
