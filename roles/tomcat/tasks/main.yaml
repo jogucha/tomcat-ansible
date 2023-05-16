@@ -6,3 +6,4 @@
     - "{{ ansible_os_family }}.yml"
 
 - include_tasks: "tomcat-setup-{{ ansible_os_family }}.yml"
+- include_vars: artifact.yml
