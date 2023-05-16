@@ -88,7 +88,7 @@
     group_id: "{{ group_id }}"
     artifact_id: "{{ artifact_id }}"
     extension: war
-    repository_url: 'http://10.0.0.8:8082/artifactory/libs-release-local'
+    repository_url: "{{ artifactory_rep_url }}"
     username: jenkins
     password: 3085Joguch@Jen
     version: "{{ version }}"
