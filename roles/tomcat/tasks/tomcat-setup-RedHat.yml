@@ -1,5 +1,10 @@
+---
 - name: Include artifact variables
   include_vars: artifact.yml
+    
+- name: Include credentials variables
+  include_vars: credentials.yml
+
 - name: Install Java 11 CentOS
   yum:
     name: java-11-openjdk-headless
@@ -89,8 +94,8 @@
     artifact_id: "{{ artifact_id }}"
     extension: war
     repository_url: "{{ artifactory_rep_url }}"
-    username: jenkins
-    password: 3085Joguch@Jen
+    username: "{{ jenkins_arti_usr }}"
+    password: "{{ jenkins_arti_pwd }}"
     version: "{{ version }}"
     dest: "{{ tomcat_install_path }}/webapps/{{ artifact_id }}.war"
     group: tomcat
