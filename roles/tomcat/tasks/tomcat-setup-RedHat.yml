@@ -90,7 +90,7 @@
   
 - name: Download a WAR File to the Tomcat webapps directory to be deployed
   community.general.maven_artifact:
-  group_id: "{{ group_id }}"
+    group_id: "{{ group_id }}"
     artifact_id: "{{ artifact_id }}"
     extension: "war"
     repository_url: "{{ artifactory_rep_url }}"
