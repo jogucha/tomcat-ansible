@@ -5,9 +5,9 @@
 - name: Include credentials variables
   include_vars: credentials.yml
 
-- name: Install Java 11 CentOS
+- name: Install Java 17 CentOS
   yum:
-    name: java-11-openjdk-headless
+    name: java-17-openjdk-headless
     state: present
 
 - name: Add tomcat group
