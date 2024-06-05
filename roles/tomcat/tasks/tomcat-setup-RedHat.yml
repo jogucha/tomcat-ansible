@@ -89,13 +89,13 @@
   notify: restart tomcat
 - name: Download a WAR File
   community.general.maven_artifact:
-    group_id: {{ group_id }}
-    artifact_id: {{ artifact_id }}
+    group_id: "{{ group_id }}"
+    artifact_id: "{{ artifact_id }}"
     extension: war
-    repository_url: '{{ artifactory_rep_url }}'
-    username: {{ jenkins_arti_usr }}
-    password: {{ jenkins_arti_pwd }}
-    version: {{ version }}
+    repository_url: "{{ artifactory_rep_url }}"
+    username: "{{ jenkins_arti_usr }}"
+    password: "{{ jenkins_arti_pwd }}"
+    version: "{{ version }}"
     dest: "{{ tomcat_install_path }}/webapps/{{ artifact_id }}.war"
     group: tomcat
     owner: tomcat
