@@ -40,11 +40,11 @@
       - { tomcat_script: shutdown.sh, tomcat_command: tomcatdown }
     notify: start tomcat 
 
-  - name: change port number
-    copy: 
-      src: server.xml
-      dest: /opt/{{ tomcat_package }}/conf/server.xml
-    notify: restart tomcat 
+#  - name: change port number
+#    copy: 
+#      src: server.xml
+#      dest: /opt/{{ tomcat_package }}/conf/server.xml
+#    notify: restart tomcat 
 
   handlers: 
   - name: start tomcat 
