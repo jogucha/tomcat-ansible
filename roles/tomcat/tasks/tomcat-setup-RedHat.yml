@@ -88,7 +88,7 @@
     - "{{ tomcat_install_path }}/webapps/manager/META-INF/context.xml"
   notify: restart tomcat
   
-- name: Download a WAR File to the Tomcat webapps directory to be deployed
+- name: Download a WAR File to the Tomcat webapps directory to be deployed. Enough
   community.general.maven_artifact:
     group_id: "{{ group_id }}"
     artifact_id: "{{ artifact_id }}"
