@@ -7,9 +7,9 @@
     - tomcat_vars.yml
 
   tasks:
-  - name: install java-1.8*
+  - name: install java-1.17
     yum:
-      name: java
+      name: java-17-openjdk-headless
       state: installed
 
   - name: downloading tomcat packages
