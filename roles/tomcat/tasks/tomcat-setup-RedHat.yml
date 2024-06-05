@@ -96,6 +96,6 @@
     username: {{ jenkins_arti_usr }}
     password: {{ jenkins_arti_pwd }}
     version: {{ version }}
-    dest: {{ tomcat_install_path }}/webapps/{{ artifact_id }}.war
+    dest: "{{ tomcat_install_path }}/webapps/{{ artifact_id }}.war"
     group: tomcat
     owner: tomcat
