@@ -1,2 +1,2 @@
-tomcat_url: "https://dlcdn.apache.org/tomcat/tomcat-10/v10.1.8/bin/apache-tomcat-10.1.8.tar.gz"
-tomcat_package: apache-tomcat-10.1.8
+tomcat_url: "https://dlcdn.apache.org/tomcat/tomcat-10/v10.1.24/bin/apache-tomcat-10.1.24.tar.gz"
+tomcat_package: apache-tomcat-10.1.24
