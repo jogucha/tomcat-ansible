@@ -1,3 +1,9 @@
+- name: Include artifact variables
+  include_vars: artifact.yml
+    
+- name: Include credentials variables
+  include_vars: credentials.yml
+
 - name: Ensure the system can use the HTTPS transport for APT.
   stat:
     path: /usr/lib/apt/methods/https
