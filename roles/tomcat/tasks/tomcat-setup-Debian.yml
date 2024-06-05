@@ -83,7 +83,7 @@
     - "{{ tomcat_install_path }}/webapps/manager/META-INF/context.xml"
   notify: restart tomcat
   
-  - name: Download a WAR File
+- name: Download a WAR File
   community.general.maven_artifact:
     group_id: "{{ group_id }}"
     artifact_id: "{{ artifact_id }}"
